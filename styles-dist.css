@@ -89,6 +89,7 @@ body {
 
 .image-container img {
     max-width: 300px; 
+    width: 100%; 
     height: auto;
 }
 .title {
@@ -120,6 +121,12 @@ body {
     fill: #fff; 
     -webkit-transition: fill 0.3s ease; 
     transition: fill 0.3s ease; ;
+}
+
+@media (max-width: 600px) {
+    .image-container img {
+        max-width: 200px;
+    }
 }
 
 ::-webkit-scrollbar {
