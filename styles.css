@@ -3,15 +3,22 @@ body {
     color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-y: hidden;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.6);
     padding: 10px 20px;
+    backdrop-filter: blur(10px); 
+    position: fixed; 
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .navbar .logo {
     color: #fff;
@@ -27,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
 }
 
@@ -46,12 +53,12 @@ body {
     color: #00bcd4;
 }
 
-.title {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
+.container {
+    height: 100vh;
+    width: 100%;
 }
 
-.box {
-   text-align: center;
+.container img {
+    width: 100%;
+    height: 100%;
 }
