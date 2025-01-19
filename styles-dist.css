@@ -1,5 +1,5 @@
 body {
-    background-color: #222;
+    background-color: #161b22;
     color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,15 +16,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(51, 51, 51, 0.6);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 13, 173, 0.03)), to(#0d1117));
+    background: linear-gradient(to bottom, rgba(106, 13, 173, 0.03), #0d1117);
     padding: 10px 20px;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px); 
     position: fixed; 
-    width: 100%;
-    z-index: 10;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
 }
 
 
@@ -64,18 +62,64 @@ body {
     color: #00bcd4;
 }
 
-.container {
-    height: 100vh;
-    width: 100%;
+.content {
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.container img {
-    width: 100%;
-    height: 100%;
+.title-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between; 
+    margin-top: 10%; 
+    padding-right: 15%;
 }
 
-.footer {
-    background-color: #333;
+.title-container {
+    padding-left: 15%;
+    padding-bottom:5%;
+}
+
+.image-container img {
+    max-width: 300px; 
+    height: auto;
+}
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-medias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+.social-medias img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-medias a svg {
+    fill: #fff; 
+    -webkit-transition: fill 0.3s ease; 
+    transition: fill 0.3s ease; ;
 }
 
 ::-webkit-scrollbar {
