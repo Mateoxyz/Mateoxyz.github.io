@@ -79,18 +79,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 5px; /* Ancho de la barra de desplazamiento */
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(200, 200, 200, 0.8); /* Pulgar con color visible (ajusta la opacidad si lo deseas) */
-    border-radius: 10px; /* Bordes redondeados del pulgar */
+    background-color: rgba(200, 200, 200, 0.8); 
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent; /* Pista transparente */
+    background-color: transparent; 
 }
 
 ::-webkit-scrollbar-button {
-    display: none; /* Elimina los botones de la scrollbar */
+    display: none; 
 }
