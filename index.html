@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-dist.css?v=5">
     <title>Mattello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-dist.css?v=7">
     <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
@@ -12,67 +15,45 @@
     <link rel="manifest" href="assets/favicons/site.webmanifest">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <div class="title-image-container">
-            <div class="title-container">
-                <h1 class="title">Mateoxyz</h1>
+    <header class="header">
+        <img src="assets/images/logo.png" alt="logo" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="menu-link text-title">Proyectos</a></li>
+                <li><a href="#" class="menu-link text-title">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="hero-image">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-title">Mateoxyz</h1>
+                    <p class="text">Texto de la seccion</p>
+                </div>
+                <img src="assets/images/im.png" alt="Mateoxyz" class="mateoimg">
             </div>
-            <div class="image-container">
-                <img src="assets/images/im.png" alt="Mateoxyz">
-            </div>
+        </article>
+        <div class="container">
+            <h2 class="container-title text-title">Proyectos</h2>
+           <section class="flex-container">
+            <article class="flex-item">
+                <h3 class="text-project text-title">YTDownloader</h3>
+                <div class="p-container">
+                    <p class="text-project text">Es una aplicacion desarrolada en python que permite descargar videos de youtube</p>
+                </div>
+            </article>
+            <article class="flex-item">
+                <img src="https://picsum.photos/800/800?random=2" alt="dummy image" class="project-image">
+            </article>
+        </section>
         </div>
-
-        <div class="projects">
-            <div class="projects-title-container">
-                <h2 class="projects-title">Proyectos</h2>
-            </div>
-            <div class="projects-images">
-                <div class="project-rows">
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                </div>
-                <div class="project-rows">
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                </div>
-                <div class="project-rows">
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                </div>
-                <div class="project-rows">
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                    <div class="box-project"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="social-medias">
-            <a href="https://github.com/Mateoxyz">
-                <img src="assets/svg/github.svg" alt="GitHub">
-            </a>
-            <a href="https://www.youtube.com/@Mateosix">
-                <img src="assets/svg/youtube.svg" alt="Youtube">
-            </a>
-            <a href="">
-                <img src="assets/svg/twitter.svg" alt="X">
-            </a>
-            <a href="">
-                <img src="assets/svg/facebook.svg" alt="Facebook">
-            </a>
-        </div>
-    </div>
-
+    </main>
+    <footer class="footer">
+        <img src="assets/svg/github.svg" alt="github">
+        <img src="assets/svg/youtube.svg" alt="youtube">
+        <img src="assets/svg/twitter.svg" alt="twitter">
+        <img src="assets/svg/facebook.svg" alt="facebook">
+    </footer>
 </body>
 </html>
