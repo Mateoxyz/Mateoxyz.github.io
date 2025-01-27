@@ -118,7 +118,9 @@ header {
     text-align: center;
 }
 
-
+.margin-container {
+    margin-top: 2rem;
+}
 
 .project-image {
     display: block;
@@ -244,6 +246,10 @@ header {
                 align-items: center;
         text-align: center; 
         height: 100%;
+    }
+
+    .margin-container {
+        margin-top: .5rem;
     }
 
     .p-container {
