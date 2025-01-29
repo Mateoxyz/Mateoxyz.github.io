@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-dist.css?v=10">
+    <link rel="stylesheet" href="styles-dist.css?v=11">
     <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
@@ -19,14 +19,14 @@
         <img src="assets/images/logo.png" alt="logo" class="logo">
         <nav class="menu">
             <ul>
-                <li><a href="#" class="menu-link text-title">Inicio</a></li>
-                <li><a href="#" class="menu-link text-title">Proyectos</a></li>
+                <li><a href="#inicio" class="menu-link text-title">Inicio</a></li>
+                <li><a href="#projects" class="menu-link text-title">Proyectos</a></li>
                 <li><a href="#" class="menu-link text-title">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="hero-image">
+        <article class="hero-image" id="inicio">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="text-title">Mateoxyz</h1>
@@ -36,19 +36,19 @@
             </div>
         </article>
         <div class="container">
-            <h2 class="container-title text-title">Proyectos</h2>
+            <h2 class="container-title text-title" id="projects">Proyectos</h2>
             <section class="flex-container">
                 <article class="flex-item">
                     <h3 class="text-project text-title">YTDownloader</h3>
                     <div class="p-container">
-                        <p class="text-project text">Es una aplicacion desarrolada en python que permite descargar videos de youtube</p>
+                        <p class="text-project text">Es una aplicacion desarrollada en python que permite descargar videos de youtube</p>
                     </div>
                 </article>
                 <article class="flex-item">
-                    <img src="https://picsum.photos/800/800?random=1" alt="dummy image" class="project-image">
+                    <img src="assets/images/YTDownloader.png" alt="YTDownloader" class="project-image">
                 </article>
             </section>
-            <section class="flex-container flex-container-row-reverse margin-container">
+            <!-- <section class="flex-container flex-container-row-reverse margin-container">
                 <article class="flex-item">
                     <h3 class="text-project text-title">Projecto #2</h3>
                     <div class="p-container">
@@ -58,13 +58,13 @@
                 <article class="flex-item">
                     <img src="https://picsum.photos/800/800?random=2" alt="dummy image" class="project-image">
                 </article>
-            </section>
+            </section> -->
         </div>
         
     </main>
     <footer class="footer">
-        <a href="#"><img src="assets/svg/github.svg" alt="github" class="footer-link"></a>
-        <a href="#"><img src="assets/svg/youtube.svg" alt="youtube" class="footer-link"></a>
+        <a href="https://github.com/Mateoxyz"><img src="assets/svg/github.svg" alt="github" class="footer-link"></a>
+        <a href="https://www.youtube.com/@Mateosix"><img src="assets/svg/youtube.svg" alt="youtube" class="footer-link"></a>
         <a href="#"><img src="assets/svg/twitter.svg" alt="twitter" class="footer-link"></a>
         <a href="#"><img src="assets/svg/facebook.svg" alt="facebook" class="footer-link"></a>
     </footer>
